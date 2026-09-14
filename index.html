@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fast, affordable resumes, presentations and project documentation for students and freshers.">
+  <title>NexaWorks — Digital Services</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#111;background:#f7f7f5;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:1120px;margin:auto;padding:0 24px}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:22px;font-weight:800;letter-spacing:-.5px}
+    .logo span{opacity:.45}
+    .navlinks{display:flex;gap:26px;font-size:14px;color:#555}
+    .navbtn{padding:10px 16px;border:1px solid #111;border-radius:10px;font-weight:700}
+    .hero{padding:92px 0 110px;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+    .eyebrow{display:inline-block;font-size:13px;font-weight:800;padding:7px 11px;border:1px solid #ddd;border-radius:999px;background:white;margin-bottom:20px}
+    h1{font-size:clamp(48px,7vw,82px);line-height:.98;letter-spacing:-4px;max-width:760px}
+    .hero p{font-size:19px;color:#666;max-width:620px;margin:26px 0 32px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:12px;font-weight:800}
+    .primary{background:#111;color:#fff}
+    .secondary{border:1px solid #ddd;background:#fff}
+    .card{background:#111;color:#fff;border-radius:24px;padding:30px;box-shadow:0 20px 60px #00000012}
+    .card small{color:#aaa}
+    .price{font-size:58px;font-weight:800;letter-spacing:-3px;margin:16px 0}
+    .price small{font-size:16px;letter-spacing:0}
+    .check{display:flex;gap:10px;margin:13px 0;color:#ddd}
+    section{padding:90px 0}
+    .sectionhead{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px}
+    .sectionhead h2{font-size:42px;letter-spacing:-2px}
+    .sectionhead p{color:#777;max-width:450px}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .service{background:#fff;border:1px solid #e8e8e4;border-radius:18px;padding:25px;min-height:220px}
+    .num{font-size:13px;color:#999;font-weight:800}
+    .service h3{font-size:21px;margin:35px 0 10px}
+    .service p{color:#777;font-size:14px}
+    .work{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .sample{background:#e9e9e5;border-radius:20px;min-height:250px;padding:25px;display:flex;flex-direction:column;justify-content:end}
+    .sample strong{font-size:22px}
+    .sample span{color:#666;font-size:13px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .step{padding:25px;background:#fff;border:1px solid #e8e8e4;border-radius:18px}
+    .step b{font-size:13px;color:#888}
+    .step h3{margin:22px 0 8px}
+    .step p{color:#777;font-size:14px}
+    .cta{background:#111;color:#fff;border-radius:26px;padding:55px;display:flex;justify-content:space-between;align-items:center;gap:30px}
+    .cta h2{font-size:42px;line-height:1.05;letter-spacing:-2px}
+    .cta p{color:#aaa;margin-top:12px}
+    footer{padding:35px 0;color:#777;font-size:13px;display:flex;justify-content:space-between}
+    @media(max-width:800px){
+      .navlinks{display:none}.hero{grid-template-columns:1fr;padding:60px 0 70px}
+      h1{letter-spacing:-2.5px}.grid,.work,.steps{grid-template-columns:1fr 1fr}
+      .sectionhead{display:block}.sectionhead p{margin-top:12px}.cta{display:block;padding:35px}
+      .cta .btn{margin-top:25px}footer{display:block}footer div+div{margin-top:8px}
+    }
+    @media(max-width:520px){.grid,.work,.steps{grid-template-columns:1fr}.hero{gap:35px}.card{padding:24px}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav>
+      <a class="logo" href="#">Nexa<span>Works</span></a>
+      <div class="navlinks">
+        <a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a>
+      </div>
+      <a class="navbtn" href="#contact">Get Started</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">Fast • Affordable • Student-friendly</div>
+        <h1>Make your work look seriously good.</h1>
+        <p>Professional resumes, presentations and project documentation — delivered fast, without the agency-level price tag.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://wa.me/919999999999?text=Hi%20NexaWorks%2C%20I%20need%20a%20service." target="_blank">Chat on WhatsApp →</a>
+          <a class="btn secondary" href="#services">See services</a>
+        </div>
+      </div>
+      <div class="card">
+        <small>STARTING FROM</small>
+        <div class="price">₹499 <small>/ project</small></div>
+        <div class="check">✓ ATS-friendly resumes</div>
+        <div class="check">✓ Clean, modern PPTs</div>
+        <div class="check">✓ Project documentation</div>
+        <div class="check">✓ Fast turnaround</div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="sectionhead">
+          <h2>What we do.</h2>
+          <p>Simple services that solve common student, fresher and small-business problems.</p>
+        </div>
+        <div class="grid">
+          <article class="service"><span class="num">01</span><h3>ATS Resume</h3><p>Clean, recruiter-friendly resumes built to work with applicant tracking systems.</p></article>
+          <article class="service"><span class="num">02</span><h3>LinkedIn</h3><p>Sharper headline, about section and profile content that presents you professionally.</p></article>
+          <article class="service"><span class="num">03</span><h3>Presentations</h3><p>Modern, readable PPTs for college, seminars, pitches and business presentations.</p></article>
+          <article class="service"><span class="num">04</span><h3>Project Docs</h3><p>Well-structured reports, documentation and supporting project material.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="wrap">
+        <div class="sectionhead">
+          <h2>Selected work.</h2><p>Replace these placeholders with your real samples once the first portfolio pieces are ready.</p>
+        </div>
+        <div class="work">
+          <div class="sample"><strong>ATS Resume</strong><span>Minimal • Recruiter-ready</span></div>
+          <div class="sample"><strong>Seminar Deck</strong><span>Clean • Visual • Easy to present</span></div>
+          <div class="sample"><strong>Project Report</strong><span>Structured • Professional</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="wrap">
+        <div class="sectionhead"><h2>Three steps.</h2><p>No complicated onboarding. Tell us what you need and we take it from there.</p></div>
+        <div class="steps">
+          <div class="step"><b>01 — TELL US</b><h3>Send your requirement</h3><p>Message us on WhatsApp with your brief, files and deadline.</p></div>
+          <div class="step"><b>02 — WE BUILD</b><h3>We create it</h3><p>Your work is designed, reviewed and prepared for delivery.</p></div>
+          <div class="step"><b>03 — DELIVER</b><h3>Get the final files</h3><p>Receive polished, ready-to-use files in the agreed format.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap">
+      <div class="cta">
+        <div><h2>Have a deadline?<br>Let's get it done.</h2><p>Tell us what you need and we'll reply with a quote.</p></div>
+        <a class="btn secondary" href="https://wa.me/919999999999?text=Hi%20NexaWorks%2C%20I%20want%20a%20quote." target="_blank">Get a quote →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div>© 2026 NexaWorks</div><div>Built for fast, practical digital work.</div>
+  </footer>
+</body>
+</html>
