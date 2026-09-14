@@ -1,146 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fast, affordable resumes, presentations and project documentation for students and freshers.">
-  <title>NexaWorks — Digital Services</title>
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#111;background:#f7f7f5;line-height:1.6}
-    a{text-decoration:none;color:inherit}
-    .wrap{max-width:1120px;margin:auto;padding:0 24px}
-    nav{height:76px;display:flex;align-items:center;justify-content:space-between}
-    .logo{font-size:22px;font-weight:800;letter-spacing:-.5px}
-    .logo span{opacity:.45}
-    .navlinks{display:flex;gap:26px;font-size:14px;color:#555}
-    .navbtn{padding:10px 16px;border:1px solid #111;border-radius:10px;font-weight:700}
-    .hero{padding:92px 0 110px;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
-    .eyebrow{display:inline-block;font-size:13px;font-weight:800;padding:7px 11px;border:1px solid #ddd;border-radius:999px;background:white;margin-bottom:20px}
-    h1{font-size:clamp(48px,7vw,82px);line-height:.98;letter-spacing:-4px;max-width:760px}
-    .hero p{font-size:19px;color:#666;max-width:620px;margin:26px 0 32px}
-    .actions{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:12px;font-weight:800}
-    .primary{background:#111;color:#fff}
-    .secondary{border:1px solid #ddd;background:#fff}
-    .card{background:#111;color:#fff;border-radius:24px;padding:30px;box-shadow:0 20px 60px #00000012}
-    .card small{color:#aaa}
-    .price{font-size:58px;font-weight:800;letter-spacing:-3px;margin:16px 0}
-    .price small{font-size:16px;letter-spacing:0}
-    .check{display:flex;gap:10px;margin:13px 0;color:#ddd}
-    section{padding:90px 0}
-    .sectionhead{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px}
-    .sectionhead h2{font-size:42px;letter-spacing:-2px}
-    .sectionhead p{color:#777;max-width:450px}
-    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    .service{background:#fff;border:1px solid #e8e8e4;border-radius:18px;padding:25px;min-height:220px}
-    .num{font-size:13px;color:#999;font-weight:800}
-    .service h3{font-size:21px;margin:35px 0 10px}
-    .service p{color:#777;font-size:14px}
-    .work{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .sample{background:#e9e9e5;border-radius:20px;min-height:250px;padding:25px;display:flex;flex-direction:column;justify-content:end}
-    .sample strong{font-size:22px}
-    .sample span{color:#666;font-size:13px}
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .step{padding:25px;background:#fff;border:1px solid #e8e8e4;border-radius:18px}
-    .step b{font-size:13px;color:#888}
-    .step h3{margin:22px 0 8px}
-    .step p{color:#777;font-size:14px}
-    .cta{background:#111;color:#fff;border-radius:26px;padding:55px;display:flex;justify-content:space-between;align-items:center;gap:30px}
-    .cta h2{font-size:42px;line-height:1.05;letter-spacing:-2px}
-    .cta p{color:#aaa;margin-top:12px}
-    footer{padding:35px 0;color:#777;font-size:13px;display:flex;justify-content:space-between}
-    @media(max-width:800px){
-      .navlinks{display:none}.hero{grid-template-columns:1fr;padding:60px 0 70px}
-      h1{letter-spacing:-2.5px}.grid,.work,.steps{grid-template-columns:1fr 1fr}
-      .sectionhead{display:block}.sectionhead p{margin-top:12px}.cta{display:block;padding:35px}
-      .cta .btn{margin-top:25px}footer{display:block}footer div+div{margin-top:8px}
-    }
-    @media(max-width:520px){.grid,.work,.steps{grid-template-columns:1fr}.hero{gap:35px}.card{padding:24px}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NexaWorks — ATS resumes, LinkedIn profiles, presentations and project documentation for students, freshers and small businesses.">
+<title>NexaWorks — Digital Work, Done Better</title>
+<style>
+:root{--bg:#f6f6f2;--ink:#111;--muted:#6d6d68;--line:#e4e4de;--card:#fff;--soft:#ecece6;--dark:#111;--accent:#d9ff3f}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}a{text-decoration:none;color:inherit}.wrap{max-width:1160px;margin:auto;padding:0 24px}
+nav{height:78px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:23px;font-weight:900;letter-spacing:-1px}.logo span{opacity:.4}.navlinks{display:flex;gap:26px;font-size:14px;color:#555}.navbtn{border:1px solid var(--ink);border-radius:12px;padding:10px 16px;font-weight:800;background:#fff}
+.hero{padding:78px 0 95px;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:12px;font-weight:900;letter-spacing:.5px;text-transform:uppercase;border:1px solid #d9d9d3;background:#fff;border-radius:999px;padding:8px 12px;margin-bottom:22px}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);border:1px solid #111}h1{font-size:clamp(50px,7vw,88px);line-height:.94;letter-spacing:-5px;max-width:800px}.hero p{font-size:19px;color:var(--muted);max-width:640px;margin:25px 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:13px;font-weight:900;cursor:pointer;border:0}.primary{background:var(--ink);color:#fff}.secondary{background:#fff;border:1px solid var(--line)}
+.heroCard{background:var(--dark);color:#fff;border-radius:28px;padding:31px;box-shadow:0 22px 70px #00000016}.heroCard .mini{font-size:11px;color:#999;text-transform:uppercase;letter-spacing:1px;font-weight:800}.heroCard h3{font-size:34px;letter-spacing:-1.5px;margin:12px 0 8px}.heroCard p{font-size:14px;color:#aaa;margin:0 0 24px}.pillrow{display:flex;gap:8px;flex-wrap:wrap}.pill{padding:8px 10px;border:1px solid #333;border-radius:999px;color:#ddd;font-size:12px}.availability{margin-top:28px;padding-top:22px;border-top:1px solid #2d2d2d;display:flex;justify-content:space-between;gap:10px;font-size:13px}.live{color:#d9ff3f;font-weight:800}
+section{padding:86px 0}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}.sectionhead h2{font-size:44px;line-height:1;letter-spacing:-2.5px}.sectionhead p{color:#777;max-width:470px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.service,.step,.replyBox{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:25px}.num{font-size:12px;color:#999;font-weight:900}.service h3{font-size:21px;margin:36px 0 9px}.service p,.step p{font-size:14px;color:#777}.service:hover,.step:hover{transform:translateY(-3px);transition:.2s}
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.sample{min-height:290px;border-radius:23px;padding:24px;background:linear-gradient(145deg,#e8e8e2,#f7f7f3);display:flex;flex-direction:column;justify-content:space-between;border:1px solid #ddd}.sampleTop{display:flex;justify-content:space-between;font-size:12px;color:#777;font-weight:800}.sheet{background:#fff;border:1px solid #ddd;border-radius:13px;padding:18px;box-shadow:0 12px 30px #0000000a}.sheet .line{height:7px;background:#eee;border-radius:99px;margin:8px 0}.sheet .line.short{width:58%}.sheet .line.dark{background:#222;width:72%}.sample strong{font-size:22px;letter-spacing:-.5px}.sample span{color:#666;font-size:13px}.sample-link{display:inline-block;margin-top:14px;font-size:13px;font-weight:800;text-decoration:underline}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step h3{margin:22px 0 8px}.step b{font-size:12px;color:#888}.cta{background:var(--dark);color:#fff;border-radius:28px;padding:54px;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font-size:44px;line-height:1.02;letter-spacing:-2.5px}.cta p{color:#aaa;margin-top:12px}.cta .secondary{color:#111}
+.replyGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.replyBox h3{font-size:22px;letter-spacing:-.5px}.replyBox p{color:#777;font-size:14px;margin:7px 0 18px}.replyBtns{display:grid;grid-template-columns:1fr 1fr;gap:9px}.replyBtns button{border:1px solid var(--line);background:#fafaf8;border-radius:11px;padding:11px;text-align:left;font-weight:800;cursor:pointer}.replyBtns button:hover{background:#eee}.replyText{margin-top:15px;background:#f1f1ec;border-radius:12px;padding:14px;font-size:13px;min-height:78px;color:#333}.copyStatus{font-size:12px;color:#777;margin-top:8px;min-height:18px}
+footer{padding:34px 0;color:#777;font-size:13px;display:flex;justify-content:space-between;border-top:1px solid var(--line)}
+#chatButton{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;border:1px solid #222;background:#111;color:#fff;font-size:24px;z-index:20;cursor:pointer;box-shadow:0 15px 35px #0002}#chatPanel{position:fixed;right:22px;bottom:92px;width:min(360px,calc(100vw - 30px));background:#fff;border:1px solid #ddd;border-radius:20px;box-shadow:0 25px 70px #0003;z-index:20;overflow:hidden;display:none}.chatHead{background:#111;color:#fff;padding:17px 18px;display:flex;justify-content:space-between}.chatHead small{display:block;color:#aaa;margin-top:2px}.chatClose{border:0;background:none;color:#fff;font-size:18px;cursor:pointer}.chatBody{padding:15px}.botMsg{background:#f0f0eb;padding:12px 13px;border-radius:13px 13px 13px 3px;font-size:13px;margin-bottom:12px}.chatOptions{display:grid;gap:8px}.chatOptions button{border:1px solid #ddd;background:#fff;padding:11px;border-radius:11px;text-align:left;font-weight:800;cursor:pointer}.chatOptions button:hover{background:#f4f4ef}.chatFoot{font-size:11px;color:#999;padding:0 15px 15px}
+@media(max-width:850px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:55px}.grid{grid-template-columns:1fr 1fr}.work,.steps,.replyGrid{grid-template-columns:1fr}.sectionhead{display:block}.sectionhead p{margin-top:12px}.cta{display:block;padding:36px}.cta .btn{margin-top:25px}}
+@media(max-width:540px){.wrap{padding:0 17px}nav{height:70px}.hero{padding:48px 0 70px;gap:34px}h1{letter-spacing:-3px}.grid{grid-template-columns:1fr}.replyBtns{grid-template-columns:1fr}.heroCard{padding:24px}section{padding:65px 0}.sectionhead h2,.cta h2{font-size:36px}footer{display:block}footer div+div{margin-top:8px}}
+</style>
 </head>
 <body>
-  <header class="wrap">
-    <nav>
-      <a class="logo" href="#">Nexa<span>Works</span></a>
-      <div class="navlinks">
-        <a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a>
-      </div>
-      <a class="navbtn" href="#contact">Get Started</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="wrap hero">
-      <div>
-        <div class="eyebrow">Fast • Affordable • Student-friendly</div>
-        <h1>Make your work look seriously good.</h1>
-        <p>Professional resumes, presentations and project documentation — delivered fast, without the agency-level price tag.</p>
-        <div class="actions">
-          <a class="btn primary" href="https://wa.me/919999999999?text=Hi%20NexaWorks%2C%20I%20need%20a%20service." target="_blank">Chat on WhatsApp →</a>
-          <a class="btn secondary" href="#services">See services</a>
-        </div>
-      </div>
-      <div class="card">
-        <small>STARTING FROM</small>
-        <div class="price">₹499 <small>/ project</small></div>
-        <div class="check">✓ ATS-friendly resumes</div>
-        <div class="check">✓ Clean, modern PPTs</div>
-        <div class="check">✓ Project documentation</div>
-        <div class="check">✓ Fast turnaround</div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="wrap">
-        <div class="sectionhead">
-          <h2>What we do.</h2>
-          <p>Simple services that solve common student, fresher and small-business problems.</p>
-        </div>
-        <div class="grid">
-          <article class="service"><span class="num">01</span><h3>ATS Resume</h3><p>Clean, recruiter-friendly resumes built to work with applicant tracking systems.</p></article>
-          <article class="service"><span class="num">02</span><h3>LinkedIn</h3><p>Sharper headline, about section and profile content that presents you professionally.</p></article>
-          <article class="service"><span class="num">03</span><h3>Presentations</h3><p>Modern, readable PPTs for college, seminars, pitches and business presentations.</p></article>
-          <article class="service"><span class="num">04</span><h3>Project Docs</h3><p>Well-structured reports, documentation and supporting project material.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="work">
-      <div class="wrap">
-        <div class="sectionhead">
-          <h2>Selected work.</h2><p>Replace these placeholders with your real samples once the first portfolio pieces are ready.</p>
-        </div>
-        <div class="work">
-          <div class="sample"><strong>ATS Resume</strong><span>Minimal • Recruiter-ready</span></div>
-          <div class="sample"><strong>Seminar Deck</strong><span>Clean • Visual • Easy to present</span></div>
-          <div class="sample"><strong>Project Report</strong><span>Structured • Professional</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="process">
-      <div class="wrap">
-        <div class="sectionhead"><h2>Three steps.</h2><p>No complicated onboarding. Tell us what you need and we take it from there.</p></div>
-        <div class="steps">
-          <div class="step"><b>01 — TELL US</b><h3>Send your requirement</h3><p>Message us on WhatsApp with your brief, files and deadline.</p></div>
-          <div class="step"><b>02 — WE BUILD</b><h3>We create it</h3><p>Your work is designed, reviewed and prepared for delivery.</p></div>
-          <div class="step"><b>03 — DELIVER</b><h3>Get the final files</h3><p>Receive polished, ready-to-use files in the agreed format.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="wrap">
-      <div class="cta">
-        <div><h2>Have a deadline?<br>Let's get it done.</h2><p>Tell us what you need and we'll reply with a quote.</p></div>
-        <a class="btn secondary" href="https://wa.me/919999999999?text=Hi%20NexaWorks%2C%20I%20want%20a%20quote." target="_blank">Get a quote →</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="wrap">
-    <div>© 2026 NexaWorks</div><div>Built for fast, practical digital work.</div>
-  </footer>
+<header class="wrap"><nav><a class="logo" href="#">Nexa<span>Works</span></a><div class="navlinks"><a href="#services">Services</a><a href="#work">Work</a><a href="#replies">WhatsApp</a><a href="#process">Process</a></div><a class="navbtn" href="#contact">Get Started</a></nav></header>
+<main>
+<section class="wrap hero"><div><div class="eyebrow"><span class="dot"></span> Fast • Clean • Student-friendly</div><h1>Make your work look seriously good.</h1><p>Professional resumes, presentations, LinkedIn profiles and project documentation — built with a practical, polished approach.</p><div class="actions"><a class="btn primary" href="https://wa.me/919340566118?text=Hi%20NexaWorks%2C%20I%20need%20a%20service." target="_blank" rel="noopener">Chat on WhatsApp →</a><a class="btn secondary" href="#services">Explore services</a></div></div><div class="heroCard"><div class="mini">NexaWorks</div><h3>Quality work.<br>Fast delivery.</h3><p>No public price list — every project gets a quote based on the actual requirement.</p><div class="pillrow"><span class="pill">ATS Resume</span><span class="pill">LinkedIn</span><span class="pill">PPT</span><span class="pill">Project Docs</span></div><div class="availability"><span>Quote-based service</span><span class="live">● WhatsApp ready</span></div></div></section>
+<section id="services"><div class="wrap"><div class="sectionhead"><h2>What we do.</h2><p>Simple services that solve common student, fresher and small-business problems without unnecessary complexity.</p></div><div class="grid"><article class="service"><span class="num">01</span><h3>ATS Resume</h3><p>Clean, recruiter-friendly resumes with strong structure, keywords and readable formatting.</p></article><article class="service"><span class="num">02</span><h3>LinkedIn</h3><p>Sharper headline, About section and profile content that presents your skills professionally.</p></article><article class="service"><span class="num">03</span><h3>Presentations</h3><p>Modern, readable PPTs for college, seminars, pitches and business presentations.</p></article><article class="service"><span class="num">04</span><h3>Project Docs</h3><p>Well-structured reports, documentation and supporting project material prepared for delivery.</p></article></div></div></section>
+<section id="work"><div class="wrap"><div class="sectionhead"><h2>Selected work.</h2><p>Real portfolio work used as sample references, presented in a privacy-conscious format.</p></div><div class="work">
+          <article class="sample"><strong>ATS Resume</strong><span>Minimal • Recruiter-ready</span><a class="sample-link" href="samples/Resume/Mayank_Yadav_ATS_Resume.docx" target="_blank">View sample →</a></article>
+          <article class="sample"><strong>Smart Ride Sharing</strong><span>Python • MongoDB • Desktop App</span><a class="sample-link" href="samples/Smart-Ride-Sharing/PROJECT_SUMMARY.md" target="_blank">View project →</a></article>
+          <article class="sample"><strong>Minor Project</strong><span>NLP • ML • Academic project</span><a class="sample-link" href="samples/Minor-Project/Original_Minor_Project_Report_Reference.pdf" target="_blank">View report →</a></article>
+        </div></div></section>
+<section id="replies"><div class="wrap"><div class="sectionhead"><h2>WhatsApp quick replies.</h2><p>Use these ready-made replies when handling leads. The buttons copy a polished response to your clipboard.</p></div><div class="replyGrid"><div class="replyBox"><h3>Auto-reply templates</h3><p>Select the situation and copy the response.</p><div class="replyBtns"><button onclick="setReply('welcome')">New enquiry</button><button onclick="setReply('quote')">Quote request</button><button onclick="setReply('details')">Need details</button><button onclick="setReply('delivery')">Delivery update</button></div><div id="replyText" class="replyText">Hi! Thanks for contacting NexaWorks. Please share your requirement, deadline and any reference file. I’ll review it and get back with a quote.</div><button class="btn primary" style="margin-top:10px;padding:11px 15px" onclick="copyReply()">Copy reply</button><div id="copyStatus" class="copyStatus"></div></div><div class="replyBox"><h3>Start a WhatsApp chat</h3><p>Visitors can send a pre-filled enquiry directly to your WhatsApp number.</p><div class="replyText"><b>Suggested message</b><br><br>“Hi NexaWorks, I need help with a resume / PPT / project document. My deadline is ___.”</div><a class="btn primary" style="margin-top:10px" href="https://wa.me/919340566118?text=Hi%20NexaWorks%2C%20I%20need%20help%20with%20a%20resume%20%2F%20PPT%20%2F%20project%20document.%20My%20deadline%20is%20___%2E" target="_blank" rel="noopener">Open WhatsApp →</a></div></div></div></section>
+<section id="process"><div class="wrap"><div class="sectionhead"><h2>Three steps.</h2><p>No complicated onboarding. Tell us what you need and we take it from there.</p></div><div class="steps"><div class="step"><b>01 — TELL US</b><h3>Send your requirement</h3><p>Message us on WhatsApp with your brief, files and deadline.</p></div><div class="step"><b>02 — WE BUILD</b><h3>We create it</h3><p>Your work is designed, reviewed and prepared around the agreed requirement.</p></div><div class="step"><b>03 — DELIVER</b><h3>Get the final files</h3><p>Receive polished, ready-to-use files in the agreed format.</p></div></div></div></section>
+<section id="contact" class="wrap"><div class="cta"><div><h2>Have a deadline?<br>Let's get it done.</h2><p>Tell us what you need and we'll reply with a quote.</p></div><a class="btn secondary" href="https://wa.me/919340566118?text=Hi%20NexaWorks%2C%20I%20want%20a%20quote." target="_blank" rel="noopener">Get a quote →</a></div></section>
+</main>
+<footer class="wrap"><div>© 2026 NexaWorks</div><div>Built for fast, practical digital work.</div></footer>
+<button id="chatButton" aria-label="Open Nexa Assistant" onclick="toggleChat()">✦</button>
+<div id="chatPanel"><div class="chatHead"><div><b>Nexa Assistant</b><small>Quick help • WhatsApp ready</small></div><button class="chatClose" onclick="toggleChat()">×</button></div><div class="chatBody"><div id="botMsg" class="botMsg">Hi! 👋 I’m Nexa Assistant. What do you need help with?</div><div class="chatOptions"><button onclick="bot('resume')">📄 I need an ATS Resume</button><button onclick="bot('ppt')">📊 I need a PPT</button><button onclick="bot('project')">📁 I need Project Docs</button><button onclick="bot('linkedin')">💼 I need LinkedIn help</button><button onclick="bot('quote')">💬 I want a quote</button></div></div><div class="chatFoot">This is a website FAQ assistant. WhatsApp opens with a pre-filled message.</div></div>
+<script>
+const WA='919340566118';
+const replies={welcome:"Hi! Thanks for contacting NexaWorks. Please share your requirement, deadline and any reference file. I’ll review it and get back with a quote.",quote:"Sure! Please send the service you need, your deadline, and any reference/sample. I’ll check the requirement and share a quote.",details:"Absolutely. Please send your current file, required format, deadline and any specific instructions. I’ll take it from there.",delivery:"Hi! Your work is being prepared as discussed. I’ll share the final files in the agreed format once the review is complete."};
+const botAnswers={resume:"For an ATS Resume, send your current resume (if available), target role, experience/projects and deadline. We’ll structure it into a clean recruiter-friendly format.",ppt:"For a PPT, send the topic, number of slides, any college/company format, reference material and deadline.",project:"For Project Docs, send your project details/files, required report format, sections needed and deadline. We can help structure and polish the documentation.",linkedin:"For LinkedIn, send your current profile text or resume plus your target role. We can improve the headline, About section and profile presentation.",quote:"For a quote, tell us the service, deadline and approximate scope. There is no public fixed price list; quotes are based on the actual requirement."};
+function toggleChat(){const p=document.getElementById('chatPanel');p.style.display=p.style.display==='block'?'none':'block'}
+function bot(k){document.getElementById('botMsg').innerHTML=botAnswers[k]+"<br><br><button class='btn primary' style='padding:10px 13px;font-size:12px' onclick=wa('"+k+"')>Continue on WhatsApp →</button>"}
+function wa(k){const msg={resume:'Hi NexaWorks, I need an ATS Resume. My deadline is ___.',ppt:'Hi NexaWorks, I need a PPT. Topic: ___. Slides: ___. Deadline: ___.',project:'Hi NexaWorks, I need Project Documentation. Project: ___. Deadline: ___.',linkedin:'Hi NexaWorks, I need LinkedIn profile help. My target role is ___.',quote:'Hi NexaWorks, I want a quote. Service: ___. Deadline: ___.'}[k];window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(msg),'_blank')}
+function setReply(k){document.getElementById('replyText').textContent=replies[k];document.getElementById('copyStatus').textContent=''}
+async function copyReply(){const t=document.getElementById('replyText').textContent;try{await navigator.clipboard.writeText(t);document.getElementById('copyStatus').textContent='✓ Reply copied to clipboard.'}catch(e){document.getElementById('copyStatus').textContent='Select and copy the reply manually.'}}
+</script>
 </body>
 </html>
